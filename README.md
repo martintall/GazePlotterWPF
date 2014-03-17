@@ -6,7 +6,7 @@ A simple application that plots gaze data coming out of The Eye Tribe API. It is
 Current functionality:
  - Left and right eye gaze X/Y coordinates (when calibrated)
  - Left and right eye pupil size
- - Crude blink detection 
-   flashes background to indicate a potential blink event, this is based on momentarily lost tracking
+ - Crude blink detection based on momentarily lost tracking,
+   flashing background to indicate a potential blink event.
 
 ![alt tag](http://theeyetribe.com/images/gazeplotter.PNG)
