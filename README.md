@@ -1,12 +1,11 @@
 GazePlotterWPF
 ==============
 
-A simple application that plots gaze data coming out of The Eye Tribe API.
+A simple application that plots gaze data coming out of The Eye Tribe API. It is written in C# using Visual Studio 2012 and requires .Net 3.5 or higher. 
 
 Current functionality:
  - Left and right eye gaze X/Y coordinates (when calibrated)
  - Left and right eye pupil size
- - Flashed background to indicate a potential blink event 
-   this is based on momentarily lost tracking, see source for the crude implementation. 
-   
+ - Crude blink detection 
+   flashes background to indicate a potential blink event, this is based on momentarily lost tracking
 
