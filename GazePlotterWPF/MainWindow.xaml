@@ -1,0 +1,74 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:rolling="clr-namespace:GazePlotterWPF"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="GazePlotterWPF.MainWindow"
+        Title="TETGazePlot" Width="683" Background="Black" Height="524">
+	<StackPanel Margin="4,8,4,4">
+		<Grid x:Name="GridLeft" Margin="4,0">
+
+			<Rectangle Fill="#FF1F1F1F" Margin="0" Stroke="#FF5F5F5F" RadiusX="2" RadiusY="2"/>
+			<Label Content="Left Gaze" HorizontalAlignment="Left" Height="120" Margin="22.5,-0.5,0,0.5" VerticalAlignment="Center" Width="77" RenderTransformOrigin="0.5,0.5" Foreground="#FFC7C7C7" FontSize="16" FontFamily="Segoe UI Light">
+				<Label.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Label.RenderTransform>
+			</Label>
+
+			<rolling:RollingMonitor x:Name="monitorLeftX" Margin="20,4,4,4"/>
+			<rolling:RollingMonitor x:Name="monitorLeftY" Margin="20,4,4,4"/>
+		</Grid>
+		<Grid x:Name="GridLeftPupil" Margin="4,8,4,0">
+
+			<Rectangle Fill="#FF1F1F1F" Margin="0" Stroke="#FF5F5F5F" RadiusX="2" RadiusY="2"/>
+			<Label Content="Left Pupil" HorizontalAlignment="Left" Height="120" Margin="21.5,-10,0,-9" VerticalAlignment="Center" Width="77" RenderTransformOrigin="0.5,0.5" Foreground="#FFC7C7C7" FontSize="16" FontFamily="Segoe UI Light">
+				<Label.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Label.RenderTransform>
+			</Label>
+
+			<rolling:RollingMonitor x:Name="monitorLeftPupil" Margin="20,4,4,4"/>
+		</Grid>
+		<Grid x:Name="GridRight" Margin="4,16,4,0">
+			<Rectangle Fill="#FF1F1F1F" Margin="0" Stroke="#FF5F5F5F" RadiusX="2" RadiusY="2"/>
+			<Label Content="Right Gaze" HorizontalAlignment="Left" Height="120" Margin="20.5,3.5,0,-3.5" VerticalAlignment="Center" Width="83" RenderTransformOrigin="0.5,0.5" Foreground="#FFC7C7C7" FontSize="16" FontFamily="Segoe UI Light">
+				<Label.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Label.RenderTransform>
+			</Label>
+			<rolling:RollingMonitor x:Name="monitorRightX" Margin="20,4,4,4"/>
+			<rolling:RollingMonitor x:Name="monitorRightY" Margin="20,4,4,4"/>
+        
+		</Grid>
+		<Grid x:Name="GridRightPupil" Margin="4,8,4,0">
+
+			<Rectangle Fill="#FF1F1F1F" Margin="0" Stroke="#FF5F5F5F" RadiusX="2" RadiusY="2"/>
+			<Label Content="Right Pupil" HorizontalAlignment="Left" Height="120" Margin="18,-8.5,0,-10.5" VerticalAlignment="Center" Width="84" RenderTransformOrigin="0.5,0.5" Foreground="#FFC7C7C7" FontSize="16" FontFamily="Segoe UI Light">
+				<Label.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-90"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Label.RenderTransform>
+			</Label>
+
+			<rolling:RollingMonitor x:Name="monitorRightPupil" Margin="20,4,4,4"/>
+		</Grid>
+        
+	</StackPanel>
+</Window>
