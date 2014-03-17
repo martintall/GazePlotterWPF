@@ -9,3 +9,4 @@ Current functionality:
  - Crude blink detection 
    flashes background to indicate a potential blink event, this is based on momentarily lost tracking
 
+![alt tag](http://theeyetribe.com/images/gazeplotter.PNG)
